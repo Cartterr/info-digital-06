@@ -1,0 +1,448 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@Cartterr
+profesorfaco
+/
+dno075-2021-2
+Public
+2
+313
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+dno075-2021-2/clase-06/index.html
+@profesorfaco
+profesorfaco Add files via upload
+Latest commit 5e5c41d on 31 Jul
+ History
+ 1 contributor
+555 lines (551 sloc)  42.2 KB
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <title>Reemplaza este título que se muestra en la ventana de tu navegador</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@0;1&display=swap" rel="stylesheet" />
+        <style>
+            :root {
+                --bs-font-sans-serif: "DM Sans", sans-serif;
+            }
+            :hover {
+                transition: all ease 0.5s;
+            }
+            * {
+                font-weight: 300;
+            }
+            header p {
+                text-align: justify;
+            }
+            header p.lead {
+                line-height: 1.6;
+            }
+            .card,
+            .card-img-top {
+                border: none;
+                border-radius: 0 0;
+            }
+            footer a {
+                color: var(--bs-gray);
+                text-decoration: none;
+            }
+            footer a:hover {
+                color: var(--bs-light);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="container">
+            <div class="row py-5">
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <h1 class="mb-3 mt-5 text-center">Ingresos según formato de Música (En total hasta ahora)</h1>
+
+                    <h2 class="fs-6 mb-5 text-center text-uppercase">José Carter</h2>
+
+                    <p class="lead">
+                        La música está formada por multiples formatos, generos y características, y en el mundo económico estas podrían afectar el nivel de ingreso que proporciona cada una. Por ello se podrá visualizar mediante un gráfico no figurativo el nivel de ingreso de cada formato musical.
+
+                    </p>
+
+                  <p>Aquí hay una visualización mediante un diagrama de rayos de sol que indica el nivel de ingreso según su formato acorde con el tamaño de cada sección. Esta información es recopilada desde el año 1973 y muestra el total de la popularidad recaudada hasta ahora.</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-fluid bg-light">
+            <div class="row py-5">
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <!--parte acá…-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1005" height="600">
+                        <rect width="1005" height="600" x="0" y="0" fill="#FFFFFF" id="backgorund" />
+                        <g transform="translate(402.5,300)" id="viz">
+                            <path
+                                fill="#9467bd"
+                                display=""
+                                d="M0.999992072947904,-191.3307201165001A191.33333333333334,191.33333333333334,0,0,1,152.8736542339732,-115.05690020853183L76.9372724833679,-58.524358580546995A96.66666666666667,96.66666666666667,0,0,0,0.9999920729479188,-96.66149419649216Z"
+                            >
+                                <title>Tape</title>
+                            </path>
+                            <path
+                                fill="#1f77b4"
+                                display=""
+                                d="M154.06796194996426,-113.45266653996642A191.33333333333334,191.33333333333334,0,0,1,158.87005919829022,106.62433462758963L80.54003722496888,53.45789790335074A96.66666666666667,96.66666666666667,0,0,0,78.13158019935895,-56.92012491198158Z"
+                            >
+                                <title>Disc</title>
+                            </path>
+                            <path
+                                fill="#ff7f0e"
+                                display=""
+                                d="M157.74686388842153,108.27913639206888A191.33333333333334,191.33333333333334,0,0,1,3.782580716691478,191.2959396525869L2.4057211841563153,96.63672671416674A96.66666666666667,96.66666666666667,0,0,0,79.41684191510022,55.11269966782998Z"
+                            >
+                                <title>Download</title>
+                            </path>
+                            <path
+                                fill="#2ca02c"
+                                display=""
+                                d="M1.7828081052646205,191.32502721730958A191.33333333333334,191.33333333333334,0,0,1,-167.93496941446998,91.68582492515122L-84.6069850577348,46.75577529979247A96.66666666666667,96.66666666666667,0,0,0,0.40594857272941637,96.66581427888943Z"
+                            >
+                                <title>Other</title>
+                            </path>
+                            <path
+                                fill="#d62728"
+                                display=""
+                                d="M-168.88416262960158,89.92543609759551A191.33333333333334,191.33333333333334,0,0,1,-187.58016237108674,-37.71110087601768L-94.8667437965227,-18.56731983592052A96.66666666666667,96.66666666666667,0,0,0,-85.55617827286639,44.995386472236795Z"
+                            >
+                                <title>Streaming</title>
+                            </path>
+                            <path
+                                fill="#8c564b"
+                                display=""
+                                d="M-187.1757304324011,-39.669766592980594A191.33333333333334,191.33333333333334,0,0,1,-0.999992072947885,-191.3307201165001L-0.9999920729478876,-96.66149419649216A96.66666666666667,96.66666666666667,0,0,0,-94.46231185783708,-20.525985552883384Z"
+                            >
+                                <title>Vinyl</title>
+                            </path>
+                            <path
+                                fill="#9467bd"
+                                display=""
+                                d="M0.9999920729479248,-287.99826391118063A288,288,0,0,1,40.750690070681,-285.1024048631707L27.030350850503606,-191.43442195873882A193.33333333333334,193.33333333333334,0,0,0,0.9999920729479279,-193.33074715014118Z"
+                            >
+                                <title>8 - Track</title>
+                            </path>
+                            <path
+                                fill="#9467bd"
+                                display=""
+                                d="M42.72955766113207,-284.812543442321A288,288,0,0,1,177.8423352545414,-226.5305802562014L119.12618148911186,-152.27189714980557A193.33333333333334,193.33333333333334,0,0,0,29.009218440954687,-191.1445605378891Z"
+                            >
+                                <title>Cassette</title>
+                            </path>
+                            <path
+                                fill="#9467bd"
+                                display=""
+                                d="M179.41115414817287,-225.29011910694297A288,288,0,0,1,219.97668718279715,-185.88775402398568L147.4571620241302,-125.03664721019673A193.33333333333334,193.33333333333334,0,0,0,120.6950003827433,-151.03143600054716Z"
+                            >
+                                <title>Cassette Single</title>
+                            </path>
+                            <path
+                                fill="#9467bd"
+                                display=""
+                                d="M221.2622522113485,-184.35567728269612A288,288,0,0,1,230.41293309835038,-172.78275452433067L154.47792230379383,-116.25123353530846A193.33333333333334,193.33333333333334,0,0,0,148.74272705268152,-123.50457046890722Z"
+                            >
+                                <title>Other Tapes</title>
+                            </path>
+                            <path
+                                fill="#1f77b4"
+                                display=""
+                                d="M231.60724081434142,-171.17852085576524A288,288,0,0,1,286.40530213782677,-30.265539931416306L192.2279976067655,-20.64399946403634A193.33333333333334,193.33333333333334,0,0,0,155.67223001978485,-114.64699986674304Z"
+                            >
+                                <title>CD</title>
+                            </path>
+                            <path
+                                fill="#1f77b4"
+                                display=""
+                                d="M286.6085706828593,-28.275912206831894A288,288,0,0,1,270.9718608286032,97.5615223286521L182.01349390012814,65.18332467775629A193.33333333333334,193.33333333333334,0,0,0,192.431266151798,-18.654371739451925Z"
+                            >
+                                <title>CD Single</title>
+                            </path>
+                            <path
+                                fill="#1f77b4"
+                                display=""
+                                d="M270.28782596437486,99.4408926722392A288,288,0,0,1,238.85350425088183,160.91303088026768L160.5248964484091,107.74755402330636A193.33333333333334,193.33333333333334,0,0,0,181.32945903589982,67.06269502134339Z"
+                            >
+                                <title>SACD</title>
+                            </path>
+                            <path
+                                fill="#ff7f0e"
+                                display=""
+                                d="M237.73030894101308,162.56783264474703A288,288,0,0,1,195.30607840107854,211.6590081701976L131.34963109802885,141.86279353019066A193.33333333333334,193.33333333333334,0,0,0,159.40170113854037,109.40235578778565Z"
+                            >
+                                <title>Download Album</title>
+                            </path>
+                            <path
+                                fill="#ff7f0e"
+                                display=""
+                                d="M193.83153541632998,213.0101778745514A288,288,0,0,1,144.86515049434635,248.91381675642353L97.5313921138266,166.92934232817424A193.33333333333334,193.33333333333334,0,0,0,129.87508811328036,143.21396323454442Z"
+                            >
+                                <title>Download Music Video</title>
+                            </path>
+                            <path
+                                fill="#ff7f0e"
+                                display=""
+                                d="M143.13311341683445,249.91380882937145A288,288,0,0,1,83.55681502319113,275.6125154327724L56.40586518339368,184.9220272187459A193.33333333333334,193.33333333333334,0,0,0,95.7993550363147,167.92933440112216Z"
+                            >
+                                <title>Download Single</title>
+                            </path>
+                            <path
+                                fill="#ff7f0e"
+                                display=""
+                                d="M81.64085118662568,276.1861173511863A288,288,0,0,1,67.3900075613906,280.00461939203024L45.5581757525189,187.88887779717135A193.33333333333334,193.33333333333334,0,0,0,54.48990134682822,185.49562913715974Z"
+                            >
+                                <title>Other Digital</title>
+                            </path>
+                            <path
+                                fill="#ff7f0e"
+                                display=""
+                                d="M65.44393324698571,280.4658474773071A288,288,0,0,1,5.188503579871371,287.953259107449L3.8116689051692627,193.2957551472229A193.33333333333334,193.33333333333334,0,0,0,43.61210143811399,188.35010588244816Z"
+                            >
+                                <title>Ringtones &amp; Ringbacks</title>
+                            </path>
+                            <path
+                                fill="#2ca02c"
+                                display=""
+                                d="M3.1887309684443563,287.98234667217173A288,288,0,0,1,-69.51607794875768,279.4843732780462L-46.34683333280895,187.69589451503356A193.33333333333334,193.33333333333334,0,0,0,1.811896293742272,193.3248427119456Z"
+                            >
+                                <title>DVD Audio</title>
+                            </path>
+                            <path
+                                fill="#2ca02c"
+                                display=""
+                                d="M-71.45523837656634,278.994890470324A288,288,0,0,1,-128.35975918604308,257.81344461005335L-85.87305527207512,173.21546165402472A193.33333333333334,193.33333333333334,0,0,0,-48.285993760617615,187.2064117073114Z"
+                            >
+                                <title>Kiosk</title>
+                            </path>
+                            <path
+                                fill="#2ca02c"
+                                display=""
+                                d="M-130.1470102989449,256.9158533649614A288,288,0,0,1,-227.8756280686865,176.11558174193922L-152.7708374292394,118.48564895778175A193.33333333333334,193.33333333333334,0,0,0,-87.66030638497698,172.31787040893278Z"
+                            >
+                                <title>Music Video (Physical)</title>
+                            </path>
+                            <path
+                                fill="#2ca02c"
+                                display=""
+                                d="M-229.09314127533682,174.52888763926325A288,288,0,0,1,-253.02187594451195,137.5642769527031L-169.69539599187863,92.6350384948227A193.33333333333334,193.33333333333334,0,0,0,-153.98835063588973,116.89895485510577Z"
+                            >
+                                <title>Synchronization</title>
+                            </path>
+                            <path
+                                fill="#d62728"
+                                display=""
+                                d="M-253.97106915964366,135.8038881251472A288,288,0,0,1,-260.5924543241154,122.6196262811701L-174.7945467041628,82.61140490431106A193.33333333333334,193.33333333333334,0,0,0,-170.6445892070103,90.87464966726687Z"
+                            >
+                                <title>Limited Tier Paid Subscription</title>
+                            </path>
+                            <path
+                                fill="#d62728"
+                                display=""
+                                d="M-261.43768414736286,120.80702507579488A288,288,0,0,1,-274.3681226623605,87.55645759583867L-184.0821072421153,59.089386281126075A193.33333333333334,193.33333333333334,0,0,0,-175.63977652741025,80.79880369893581Z"
+                            >
+                                <title>On-Demand Streaming (Ad-Supported)</title>
+                            </path>
+                            <path
+                                fill="#d62728"
+                                display=""
+                                d="M-274.969529493948,85.64903881467012A288,288,0,0,1,-278.9948904703239,71.45523837656663L-187.20641170731133,48.285993760617814A193.33333333333334,193.33333333333334,0,0,0,-184.6835140737028,57.18196749995751Z"
+                            >
+                                <title>Other Ad-Supported Streaming</title>
+                            </path>
+                            <path
+                                fill="#d62728"
+                                display=""
+                                d="M-279.48437327804606,69.51607794875798A288,288,0,0,1,-287.84734178111955,9.375917530744902L-193.21987410526418,6.622539431641231A193.33333333333334,193.33333333333334,0,0,0,-187.69589451503353,46.34683333280915Z"
+                            >
+                                <title>Paid Subscription</title>
+                            </path>
+                            <path
+                                fill="#d62728"
+                                display=""
+                                d="M-287.90551075749363,7.37677947797761A288,288,0,0,1,-282.25061481551785,-57.2589769054789L-189.53887008976074,-38.11554148735905A193.33333333333334,193.33333333333334,0,0,0,-193.27804308163826,4.623401378873919Z"
+                            >
+                                <title>SoundExchange Distributions</title>
+                            </path>
+                            <path
+                                fill="#8c564b"
+                                display=""
+                                d="M-281.84618287683224,-59.21764262244176A288,288,0,0,1,-182.66877461034764,-222.6569531417198L-122.87882045250873,-149.26008596399075A193.33333333333334,193.33333333333334,0,0,0,-189.1344381510751,-40.07420720432192Z"
+                            >
+                                <title>LP/EP</title>
+                            </path>
+                            <path
+                                fill="#8c564b"
+                                display=""
+                                d="M-181.11816278766284,-223.92009983121582A288,288,0,0,1,-0.99999207294796,-287.99826391118063L-0.9999920729479516,-193.33074715014118A193.33333333333334,193.33333333333334,0,0,0,-121.32820862982392,-150.52323265348676Z"
+                            >
+                                <title>Vinyl Single</title>
+                            </path>
+                        </g>
+                        <g id="labels" transform="translate(402.5,300)" text-anchor="middle">
+                            <text transform="rotate(90) translate(48.333333333333336,0) rotate(180)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;" /></text>
+                            <text transform="rotate(-63.33333333333333) translate(145,0) rotate(0)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Tape</tspan></text>
+                            <text transform="rotate(-1.25) translate(145,0) rotate(0)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Disc</tspan></text>
+                            <text transform="rotate(61.66666666666666) translate(145,0) rotate(0)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Download</tspan></text>
+                            <text transform="rotate(120.41666666666663) translate(145,0) rotate(180)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Other</tspan></text>
+                            <text transform="rotate(171.66666666666657) translate(145,0) rotate(180)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Streaming</tspan></text>
+                            <text transform="rotate(230.83333333333331) translate(145,0) rotate(180)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Vinyl</tspan></text>
+                            <text transform="rotate(-85.83333333333333) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">8 - Track</tspan>
+                            </text>
+                            <text transform="rotate(-66.66666666666666) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Cassette</tspan>
+                            </text>
+                            <text transform="rotate(-45.833333333333336) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Cassette Single</tspan>
+                            </text>
+                            <text transform="rotate(-38.33333333333333) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Other Tapes</tspan>
+                            </text>
+                            <text transform="rotate(-21.25) translate(241.66666666666669,0) rotate(0)"><tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">CD</tspan></text>
+                            <text transform="rotate(7.083333333333314) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">CD Single</tspan>
+                            </text>
+                            <text transform="rotate(27.0833333333333) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">SACD</tspan>
+                            </text>
+                            <text transform="rotate(40.83333333333334) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Download Album</tspan>
+                            </text>
+                            <text transform="rotate(53.75) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Download Music Video</tspan>
+                            </text>
+                            <text transform="rotate(66.66666666666666) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Download Single</tspan>
+                            </text>
+                            <text transform="rotate(74.99999999999997) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Other Digital</tspan>
+                            </text>
+                            <text transform="rotate(82.91666666666663) translate(241.66666666666669,0) rotate(0)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Ringtones &amp; Ringbacks</tspan>
+                            </text>
+                            <text transform="rotate(96.66666666666663) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">DVD Audio</tspan>
+                            </text>
+                            <text transform="rotate(110.41666666666663) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Kiosk</tspan>
+                            </text>
+                            <text transform="rotate(129.5833333333333) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Music Video (Physical)</tspan>
+                            </text>
+                            <text transform="rotate(147.0833333333333) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Synchronization</tspan>
+                            </text>
+                            <text transform="rotate(153.33333333333331) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Limited Tier Paid Subscription</tspan>
+                            </text>
+                            <text transform="rotate(158.74999999999997) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">On-Demand Streaming (Ad-Supported)</tspan>
+                            </text>
+                            <text transform="rotate(164.16666666666669) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Other Ad-Supported Streaming</tspan>
+                            </text>
+                            <text transform="rotate(172.08333333333331) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Paid Subscription</tspan>
+                            </text>
+                            <text transform="rotate(185) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">SoundExchange Distributions</tspan>
+                            </text>
+                            <text transform="rotate(211.24999999999994) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">LP/EP</tspan>
+                            </text>
+                            <text transform="rotate(250.41666666666669) translate(241.66666666666669,0) rotate(180)">
+                                <tspan x="0" y="4" style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;">Vinyl Single</tspan>
+                            </text>
+                        </g>
+                        <g id="legend" transform="translate(805,10)">
+                            <g transform="translate(5,0)">
+                                <g class="legendColor" transform="translate(0,0)">
+                                    <g class="legendCells" transform="translate(0,16.015625)">
+                                        <g class="cell" transform="translate(0, 0)">
+                                            <rect class="swatch" height="15" width="15" style="fill: rgb(31, 119, 180);" />
+                                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Disc</tspan></text>
+                                        </g>
+                                        <g class="cell" transform="translate(0, 21.015625)">
+                                            <rect class="swatch" height="15" width="15" style="fill: rgb(255, 127, 14);" />
+                                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Download</tspan></text>
+                                        </g>
+                                        <g class="cell" transform="translate(0, 42.03125)">
+                                            <rect class="swatch" height="15" width="15" style="fill: rgb(44, 160, 44);" />
+                                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Other</tspan></text>
+                                        </g>
+                                        <g class="cell" transform="translate(0, 63.046875)">
+                                            <rect class="swatch" height="15" width="15" style="fill: rgb(214, 39, 40);" />
+                                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Streaming</tspan></text>
+                                        </g>
+                                        <g class="cell" transform="translate(0, 84.0625)">
+                                            <rect class="swatch" height="15" width="15" style="fill: rgb(148, 103, 189);" />
+                                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Tape</tspan></text>
+                                        </g>
+                                        <g class="cell" transform="translate(0, 105.078125)">
+                                            <rect class="swatch" height="15" width="15" style="fill: rgb(140, 86, 75);" />
+                                            <text class="label" transform="translate( 20, 12.5)" font-family='"Arial", sans-serif' font-size="10px"><tspan x="0" dy="0em">Vinyl</tspan></text>
+                                        </g>
+                                    </g>
+                                    <text class="legendTitle" font-family='"Arial", sans-serif' font-size="12px" font-weight="bold"><tspan x="0" dy="0em">Category</tspan></text>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <!--…y llega hasta acá-->
+                    <p class="p-5">
+                        De esta manera podemos visualizar de una forma clara y rápida los ingresos que tienen multiples formatos en la música al tener una forma simple y fácil de seguir. Así entregando información relevante para los artistas que quizás buscan tener un buen ingreso creando música.
+                    </p>
+                </div>
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <img src="img/RevenuePerMusicFormat.svg" class="w-100">
+                    <p class="p-5">
+                        Versión originalmente obtenida de <a href="https://app.rawgraphs.io" target="_blank" target="_blank" rel="noreferrer noopener">RAWGraphs 2.0 beta</a>. Se utilizan los datos de <a href="https://www.riaa.com/u-s-sales-database/" target="_blank" target="_blank" rel="noreferrer noopener">U.S. SALES DATABASE</a>. El gráfico utilizado es un diagrama de rayos de sol que ayuda a ver los ingresos totales en todos los años de formatos de música, el
+                        cual muestra el total de popularidad que tienen o tenían ciertos formatos hasta ahora.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid bg-dark text-white-50">
+            <div class="row py-3">
+                <div class="col-12">
+                    <p class="d-flex justify-content-between small p-1 m-0">
+                        <!--reemplaza el # que sigue con la URL de tu cuenta en GitHub-->
+                        <a href="#">José Carter</a>
+                        <a href="https://github.com/profesorfaco/dno075-2021-1/">Infografía Digital v2</a>
+                        <a href="https://github.com/profesorfaco/dno075-2021-1/tree/main/clase-05" class="d-none d-lg-inline">Lunes 12 de abril, 2021</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
